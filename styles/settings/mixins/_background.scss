@@ -1,0 +1,8 @@
+@mixin set_background-xcolor($selector) {
+    @each $theme in $themes {
+        .#{$selector}-#{$theme} {
+            background-color: map-get($cst-colors, $theme);
+            color: map-get($cst-contrast_colors, $theme);
+        }
+    }
+}

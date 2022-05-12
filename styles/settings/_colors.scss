@@ -1,0 +1,32 @@
+$cst-colors: (
+    primary: #000,
+    secondary: #5e1c1c,
+    warning: #fac000,
+    danger: #c53232,
+
+    white: #fff,
+    black: #000
+);
+
+$cst-primary-color: map-get($cst-colors, primary);
+$cst-secondary-color: map-get($cst-colors, secondary);
+$cst-warning-color: map-get($cst-colors, warning);
+$cst-danger-color: map-get($cst-colors, danger);
+
+$cst-white-color: map-get($cst-colors, white);
+$cst-black-color: map-get($cst-colors, black);
+
+$cst-primary_contrast-color: $cst-white-color;
+$cst-secondary_contrast-color: $cst-white-color;
+$cst-danger_contrast-color: $cst-white-color;
+$cst-warning_contrast-color: $cst-white-color;
+
+$cst-contrast_colors: (
+    primary: $cst-white-color,
+    secondary: $cst-white-color,
+    warning: $cst-white-color,
+    danger: $cst-white-color,
+
+    white: $cst-black-color,
+    black:$cst-white-color
+);
