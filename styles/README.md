@@ -84,7 +84,7 @@ If you want to modify one of these you just need to modify the value of the numb
 
 ***Note: Only  use pixels. This value going to be converted into REM.***
 
-**IMPORTANT:** "Do not modify the `key` just modify the value, example: If you wants that the `p-2` be `15px` you should modify the value `2: 20px` to `2: 15px`. Never make the `2` as a `3`, another number. If you wants to add or modify the number by another one follow the next steps."
+**IMPORTANT:** "Do not modify the `key` just modify the value, example: If you wants that the `p-2` be `15px` you should modify the value `2: 20px` to `2: 15px`. Never make the `2` as a `3` or another number. If you wants to add or modify the number by another one follow the next steps."
 
 2) If you wants to add a new one first you must to add the number that you want to add to the `$_nums` array. ***Note: "Is recomendable follow the numbers secuence. But is not mandatory."***
 
