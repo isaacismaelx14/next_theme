@@ -1,0 +1,15 @@
+/* do not modify this colors manually, instead use the 
+`$themes` object. Follow the documentation to add a
+new theme. */
+
+@include set_background-xcolor("bg");
+
+.color-white {
+    color: $cst-white-color;
+}
+
+.color-black {
+    color: $cst-black-color;
+}
+
+@include set_xcolor("color");

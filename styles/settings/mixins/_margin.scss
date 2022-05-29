@@ -1,0 +1,24 @@
+@mixin set_xmargin() {
+    @each $n in $_nums {
+        $value: map-get($_weights, $n);
+        .m-#{$n} {
+            margin: remCalc($value);
+        }
+
+        .mt-#{$n} {
+            margin-top: remCalc($value);
+        }
+
+        .mr-#{$n} {
+            margin-right: remCalc($value);
+        }
+
+        .mb-#{$n} {
+            margin-bottom: remCalc($value);
+        }
+
+        .ml-#{$n} {
+            margin-left: remCalc($value);
+        }
+    }
+}

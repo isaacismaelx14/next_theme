@@ -34,6 +34,10 @@ const Home: NextPage = () => {
           This is a link
         </a>{" "}
       </div>
+      <div className="container-soft bg-primary color-black p-1 mt-1">
+        <h2>This is a container soft</h2>
+        <p className="color-white">You can use margins and paddings. Also you can use customs colors</p>
+      </div>
     </div>
   );
 }

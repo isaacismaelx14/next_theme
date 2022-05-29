@@ -1,0 +1,7 @@
+@mixin set_xcolor($selector) {
+    @each $theme in $themes {
+        .#{$selector}-#{$theme} {
+            color: map-get($cst-colors, $theme);
+        }
+    }
+}

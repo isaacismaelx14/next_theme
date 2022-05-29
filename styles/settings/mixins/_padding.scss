@@ -1,0 +1,24 @@
+@mixin set_xpadding() {
+    @each $n in $_nums {
+        $value: map-get($_weights, $n);
+        .p-#{$n} {
+            padding: remCalc($value);
+        }
+
+        .pt-#{$n} {
+            padding-top: remCalc($value);
+        }
+
+        .pr-#{$n} {
+            padding-right: remCalc($value);
+        }
+
+        .pb-#{$n} {
+            padding-bottom: remCalc($value);
+        }
+
+        .pl-#{$n} {
+            padding-left: remCalc($value);
+        }
+    }
+}
