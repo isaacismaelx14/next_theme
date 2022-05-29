@@ -62,7 +62,7 @@ After this you going to be able to use the new theme. You can do it call it from
 
 The weights are used for values as margins or paddings.
 
-Example for paddings: `p-1` this will add a padding with `10px` converted to `rem`. If you want to use a padding to you can use `pt-1`
+Example for paddings: `p-1` this will add a padding with `10px` converted to `rem`.
 
 ### Modify or add new one
 
