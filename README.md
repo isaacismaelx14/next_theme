@@ -19,4 +19,4 @@ This is a custom theme in progress for NextJs using components. `Easy to customi
 
 ### To do: 
 - [ ] Create 
-- Create variants (light, dark, others...)
+- [ ] Create variants (light, dark, others...)
