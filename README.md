@@ -18,5 +18,5 @@ This is a custom theme in progress for NextJs using components. `Easy to customi
 - [x] Weights (padding & margin)
 
 ### To do: 
-- [ ] Create 
+- [ ] Create react components to all these
 - [ ] Create variants (light, dark, others...)
