@@ -1,0 +1,5 @@
+code {
+    @extend %body-font;
+    @extend .box-shadow__light;
+    border-left: remCalc(5px) solid getColor('primary');
+}

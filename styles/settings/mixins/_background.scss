@@ -1,8 +1,29 @@
-@mixin set_background-xcolor($selector) {
+@mixin set_background-xcolor($selector, $hover: false) {
     @each $theme in $themes {
         .#{$selector}-#{$theme} {
             background-color: map-get($cst-colors, $theme);
             color: map-get($cst-contrast_colors, $theme);
+
+            @if($hover) {
+                &:hover {
+                    @if(map-has-key($map: $cst-hover_colors, $key: $theme)) {
+                        background-color: map-get($cst-hover_colors, $theme);
+                    }
+
+                    @else {
+                        background-color: map-get($cst-colors, $theme);
+                        filter: brightness(115%);
+                    }
+
+                    @if(map-has-key($map: $cst-contrast_hover_colors, $key: $theme)) {
+                        color: map-get($cst-contrast_hover_colors, $theme);
+                    }
+
+                    @else {
+                        color: map-get($cst-contrast_colors, $theme);
+                    }
+                }
+            }
         }
     }
 }

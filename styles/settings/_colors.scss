@@ -1,5 +1,5 @@
 $cst-colors: (
-    primary: #6492ff,
+    primary: #5b83e1,
     secondary: #5e1c1c,
     warning: #fac000,
     danger: #c53232,
@@ -54,3 +54,9 @@ $cst-contrast_colors: (
     white: $cst-black-color,
     black:$cst-white-color
 );
+
+$cst-hover_colors:(
+    primary: #72a6ff,
+); //Colors is for hoverable elements, expmple: button, link, etc.
+
+$cst-contrast_hover_colors:(); //You can add the text color of the button when you hover it.

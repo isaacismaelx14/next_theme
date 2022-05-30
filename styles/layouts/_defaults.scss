@@ -18,14 +18,81 @@ h4 {
     font-size: 1.3rem;
 }
 
-p, span {
+.text {
     @extend %body-font;
     font-size: 1rem;
+
+    &-justify {
+        text-align: justify;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+
+    &-right {
+        text-align: right;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+
+    &-lowercase {
+        text-transform: lowercase;
+    }
+
+    &-capitalize {
+        text-transform: capitalize;
+    }
+
+    &-small {
+        font-size: 0.8rem;
+    }
+
+    &-large {
+        font-size: 1.2rem;
+    }
+
+    &-xlarge {
+        font-size: 1.6rem;
+    }
+
+    &-xxlarge {
+        font-size: 2rem;
+    }
+
+    &-xxxlarge {
+        font-size: 2.5rem;
+    }
+
+    &-strong, &-bold {
+        font-weight: bold;
+    }
+
+    &-thing {
+        font-weight: 100;
+    }
+
+    @include set_xcolor(&, color);
+}
+
+p, span {
+    @extend .text;
 }
 
 a {
-    @extend %body-font;
+    @extend .text;
     font-size: 1rem;
     text-decoration: none;
-    color: $cst-primary-color;
+    color: getColor(primary);
+
+    &:hover {
+        color: getHoverColor(primary);
+    }
 }
+

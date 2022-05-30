@@ -2,6 +2,14 @@
    @return map-get($cst-colors, $theme);
 }
 
+@function getContrastColor($theme) {
+   @return map-get($cst-contrast_colors, $theme);
+}
+
+@function getHoverColor($theme) {
+   @return map-get($cst-hover_colors, $theme);
+}
+
 @function getWeight($value) {
    @return map-get($_weights, $value);
 }
