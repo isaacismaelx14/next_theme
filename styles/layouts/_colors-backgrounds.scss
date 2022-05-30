@@ -2,6 +2,14 @@
 `$themes` object. Follow the documentation to add a
 new theme. */
 
+.bg-white {
+    background-color: $cst-white-color;
+}
+
+.bg-black {
+    background-color: $cst-black-color;
+}
+
 @include set_background-xcolor("bg");
 
 .color-white {
@@ -12,4 +20,4 @@ new theme. */
     color: $cst-black-color;
 }
 
-@include set_xcolor("color");
+@include set_xcolor("color", "color");

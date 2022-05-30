@@ -1,0 +1,25 @@
+.card {
+    @extend .bg-white;
+    @extend .color-black;
+    @extend .box-shadow__light;
+
+    &-title {
+        @extend .mb-1;
+        @extend .p-1;
+        border-bottom: remCalc(1px) solid $color-gray-300;
+
+        &.no-border {
+            border-bottom: none;
+        }
+    }
+
+    &-body {
+        @extend .pr-1;
+        @extend .pl-1;
+        @extend .pb-1;
+    }
+
+    &-footer {
+        @extend .ml-1;
+    }
+}

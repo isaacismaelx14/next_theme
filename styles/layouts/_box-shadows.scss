@@ -1,0 +1,11 @@
+.box-shadow {
+    &__light {
+        box-shadow: remCalc(0 1px 3px 0) rgba(0, 0, 0, 0.1), 
+        remCalc(0 1px 2px 0) rgba(0, 0, 0, 0.06);
+    }
+
+    &__dark {
+        box-shadow: remCalc(0 1px 3px 0) rgba(255, 255, 255, 0.1),
+        remCalc(0 1px 2px 0) rgba(255, 255, 255, 0.06);
+    }
+}

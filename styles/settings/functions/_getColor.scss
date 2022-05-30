@@ -1,0 +1,3 @@
+@function getColor($theme) {
+   @return map-get($cst-colors, $theme);
+}
