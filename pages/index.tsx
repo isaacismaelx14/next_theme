@@ -48,8 +48,8 @@ const Home: NextPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, vero!
           </p>
         </div>
-        <div className="card-footer">
-          <a href="#">Link</a>
+        <div className="card-footer pb-1">
+          <a href="#" className='btn btn-primary'>Link</a>
         </div>
       </div>
 

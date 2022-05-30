@@ -1,0 +1,7 @@
+@function getColor($theme) {
+   @return map-get($cst-colors, $theme);
+}
+
+@function getWeight($value) {
+   @return map-get($_weights, $value);
+}
